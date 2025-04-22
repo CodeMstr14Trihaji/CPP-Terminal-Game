@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile C++",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+			  "-std=c++14",
+			  "${file}",  
+			  "-o",
+			  "${fileDirname}/bin/${fileBasenameNoExtension}.exe" 
+			]
+		},
+		{
+			"label": "Compile + Run",
+			"type": "shell",
+			"command": "& ${fileDirname}/bin/${fileBasenameNoExtension}.exe",
+			"dependsOn": ["Compile C++"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label":"Only Run Program",
+			"type": "shell",
+			"command":"& ${fileDirname}/bin/${fileBasenameNoExtension}.exe",
+		}
+	]
+}

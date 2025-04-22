@@ -1,0 +1,162 @@
+{
+    "C++ Main Function": {
+        "prefix": "cppmain",
+        "body": [
+            "int main() {",
+            "    ${1:// Write your code here}",
+            "    return 0;",
+            "}"
+        ],
+        "description": "Snippet for main function in C++"
+    },
+    "C++ cout": {
+        "prefix": "cppout",
+        "body": [
+            "cout << ${1} << endl;",
+        ],
+        "description": "Snippet for output in C++"
+    },
+        "C++ cin": {
+            "prefix": "cppin",
+            "body": [
+                "cin >> ${1};",
+            ],
+            "description": "Snippet for input in C++"
+    },
+    "C++ for loop": {
+        "prefix": "cppfor",
+        "body": [
+            "for (int ${1:i} = ${2://inisialisasi}; $1 ${3:} ${4://batas}; ${5://iteration}) {",
+            "    ${6: //Write your code here}",
+            "}"
+        ],
+        "description": "Snippet for for loop in C++"
+    },
+    "C++ while loop": {
+        "prefix": "cppwhile",
+        "body": [
+            "while (${1:condition}) {",
+            "    ${2:// Write your code here}",
+            "}"
+        ],
+        "description": "Snippet for while loop in C++"
+    },
+    "C++ if statement": {
+        "prefix": "cppif",
+        "body": [
+            "if (${1:condition}) {",
+            "    ${2:// Write your code here}",
+            "}"
+        ],
+        "description": "Snippet for if statement in C++"
+    },
+    "C++ else statement": {
+        "prefix": "cppelse",
+        "body": [
+            "else {",
+            "    ${1:// Write your code here}",
+            "}"
+        ],
+        "description": "Snippet for else statement in C++"
+    },
+    "C++ else if statement": {
+        "prefix": "cppelseif",
+        "body": [
+            "else if (${1:condition}) {",
+            "    ${2:// Write your code here}",
+            "}"
+        ],
+        "description": "Snippet for else if statement in C++"
+    },
+    "C++ switch statement": {
+        "prefix": "cppswitch",
+        "body": [
+            "switch (${1:variable}) {",
+            "    case ${2:value}:",
+            "        ${3:// Write your code here}",
+            "        break;",
+            "    default:",
+            "        ${4:// Write your code here}",
+            "}"
+        ],
+        "description": "Snippet for switch statement in C++"
+    },
+    "C++ void function": {
+        "prefix": "cppvfunc",
+        "body": [
+            "${1:void} ${2:functionName}(${3:parameters}) {",
+            "    ${4:// Write your code here}",
+            "}"
+        ],
+        "description": "Snippet for void function in C++"
+    },
+
+    "C++ return function": {
+        "prefix": "cpprfunc",
+        "body": [
+            "${1://return type} ${2:functionName}(${3:parameters}) {",
+            "    ${4:// Write your code here}",
+            "   return",
+            "}"
+        ],
+        "description": "Snippet for return function in C++"
+    },
+
+    "C++ flash vector": {
+        "prefix": "cppnvector",
+        "body": [
+            "#include <iostream>",
+            "#include <vector>",
+            "using namespace std;",
+            "",
+            "int main() {",
+            "    int n;",
+            "    cin >> n;",
+            "    vector<int> arr(n);",
+            "    for (int &x : arr) cin >> x;",
+            "    ${1://function}",
+            "    for (int &x : arr) cout << x << \" \";",
+            "    cout << \"\\n\";",
+            "    return 0;",
+            "}"
+        ],
+        "description": "Untuk CP"
+    },
+
+
+
+
+    "C++ Compe Template":{
+        "prefix":"cpplib",
+        "body":[
+            "#include<${1://library}>",
+        ]
+    },
+
+    "C++ first namespace":{
+        "prefix":"cppusing",
+        "body": [
+            "using namespace std;"
+        ]
+    },
+
+    "C++ fastio":{
+        "prefix": "cppfastio",
+        "body": [
+            "inline void fastio(){",
+            "   ios_base::sync_with_stdio(0);",
+            "   cin.tie(0);",
+            "}"
+        ]
+    },
+
+    "Cpp vec":{
+        "prefix": "smallvec",
+        "body": [
+            "int n; cin >> n;",
+            "vector<int>arr(n);"
+        ]
+    }
+}
+
+

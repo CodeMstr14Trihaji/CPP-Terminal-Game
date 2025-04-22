@@ -1,0 +1,1 @@
+Repository sederhana yang berisi banyak jenis-jenis game terminal yang ditulis dengan menggunakan bahasa C++.
